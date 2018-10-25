@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/chart1-big.css"/>
+    <title>联寓智能监控平台</title>
+</head>
+<style type="text/css">
+    #chart8 .service-chart {
+        background-color: transparent !important;
+    }
+    #chart8 video {
+        object-fit: fill;
+    }
+</style>
+<body>
+<div class="content">
+    <div class="part-wrap">
+        <div id="chart1">
+            <div class="guest-wrap">
+                <ul class="clear">
+                    <li style="width:40%;padding-left:20px;">城市</li>
+                    <li style="width:35%">运营商数量</li>
+                    <li style="width:25%">客房数量</li>
+                </ul>
+                <div class="guest-content">
+                    <ul id="contentTable" class="guest-content-ul">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="chart2">
+            <div id="roomChart"></div>
+            <div class="room-bg"></div>
+        </div>
+        <div id="chart3">
+
+        </div>
+    </div>
+    <div class="part-wrap-middle">
+        <div id="chartNone"></div>
+        <div id="chart4">
+            <div class="wrap-num1">
+                <span class="num1"></span>
+            </div>
+            <div class="wrap-num2">
+                <span class="num2"></span>
+            </div>
+            <span id="totalBill" class="num3 total-bill">0,000,000</span>
+        </div>
+        <div id="chart5">
+
+        </div>
+    </div>
+    <div class="part-wrap part-wrap-right">
+        <div id="chart6">
+            <div id="OperationEfficency" class="efficency"></div>
+        </div>
+        <div id="chart7">
+            <div id="onlinePay" class="online-pay"></div>
+        </div>
+        <div id="chart8">
+            <div id="serviceChart" class="service-chart"></div>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+</div>
+<script src="../js/plugins/jquery-1.9.1.js"></script>
+<script src="../js/plugins/animateBackground-plugin.js"></script>
+<script src="../js/plugins/echarts.js"></script>
+<script src="../js/plugins/china.js"></script>
+<script src="../js/plugins/bmap.js"></script>
+<!--<script src="../js/plugins/api.map.baidu.js"></script>-->
+<script src="../js/plugins/dark.js"></script>
+<script src="../js/apps/scroll.js"></script>
+<script src="../js/json/roomNumber.js"></script>
+<script src="../js/json/city.js"></script>
+<script src="../js/json/number.js"></script>
+<script src="../js/json/personMap.js"></script>
+<script src="../js/json/energy.js"></script>
+<script src="../js/apps/index-4k-static.js"></script>
+<script src="../js/plugins/ckplayer/ckplayer.js"></script>
+<script type="text/javascript">
+    var flashvars = {
+        f: '../js/json/QQ20170914-111837-HD.mp4->video/mp4',
+        c: 0,
+        p: 1,
+        e: 1
+    };
+//    var params = {bgcolor: '#FFF', allowFullScreen: true, allowScriptAccess: 'always', wmode: 'transparent'};
+//    CKobject.embedSWF('../js/plugins/ckplayer/ckplayer.swf', 'serviceChart', 'ckplayer_a1', '100%', '100%', flashvars, params);
+    /*
+     CKobject.embedSWF(播放器路径,容器id,播放器id/name,播放器宽,播放器高,flashvars的值,其它定义也可省略);
+     下面三行是调用html5播放器用到的
+     */
+    var video = ['../js/json/QQ20170914-111837-HD.mp4->video/mp4'];
+    var support = ['all'];
+    CKobject.embedHTML5('serviceChart', 'ckplayer_a1', $(window).width() * 0.1875, $(window).height() * 0.235, video, flashvars, support);
+</script>
+</body>
+</html>

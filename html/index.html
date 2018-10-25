@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/chart1.css"/>
+    <title>联寓智能监控平台</title>
+</head>
+<body>
+    <div class="content">
+        <div class="part-wrap">
+            <div id="chart1">
+                <div class="guest-wrap">
+                    <ul class="clear">
+                        <li style="width:40%;padding-left:20px;">城市</li>
+                        <li style="width:35%">运营商数量</li>
+                        <li style="width:25%">客房数量</li>
+                    </ul>
+                    <div class="guest-content">
+                        <ul id="contentTable" class="guest-content-ul">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="chart2">
+                <div id="roomChart"></div>
+                <div class="room-bg"></div>
+            </div>
+            <div id="chart3">
+
+            </div>
+        </div>
+        <div class="part-wrap-middle">
+            <div id="chartNone"></div>
+            <div id="chart4">
+                <div class="wrap-num1">
+                    <span class="num1"></span>
+                </div>
+                <div class="wrap-num2">
+                    <span class="num2"></span>
+                </div>
+                <span id="totalBill" class="num3 total-bill">0,000,000</span>
+            </div>
+            <div id="chart5">
+
+            </div>
+        </div>
+        <div class="part-wrap part-wrap-right">
+            <div id="chart6">
+                <div id="OperationEfficency" class="efficency"></div>
+            </div>
+            <div id="chart7">
+                <div id="onlinePay" class="online-pay"></div>
+            </div>
+            <div id="chart8">
+                <div id="serviceChart" class="service-chart"></div>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <script src="../js/plugins/jquery-1.9.1.js"></script>
+    <script src="../js/plugins/animateBackground-plugin.js"></script>
+    <script src="../js/plugins/echarts.js"></script>
+    <script src="../js/plugins/china.js"></script>
+    <script src="../js/plugins/bmap.js"></script>
+    <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=53oVIOgmSIejwV7EfphPgTynOZbIiVYu"></script>
+    <script src="../js/plugins/dark.js"></script>
+    <script src="../js/apps/scroll.js"></script>
+    <script src="../js/apps/index.js"></script>
+</body>
+</html>

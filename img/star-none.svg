@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="22">
+    <g>
+        <title>background</title>
+    </g>
+    <g>
+        <title>Layer 1</title>
+        <path xmlns="http://www.w3.org/2000/svg" stroke="red" style="vector-effect: non-scaling-stroke;" id="svg_2" d="m0.4525,8.983185l6.493468,0l2.006532,-6.493439l2.006533,6.493439l6.493467,0l-5.253316,4.01312l2.006635,6.493439l-5.253319,-4.013229l-5.253318,4.013229l2.006636,-6.493439l-5.253318,-4.01312z" stroke-width="1.5" fill="red">
+        </path>
+    </g>
+</svg>

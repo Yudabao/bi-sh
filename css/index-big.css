@@ -1,0 +1,250 @@
+/*------- reset ------*/
+
+@charset "utf-8";
+
+/* --Elements-- */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+label,
+textarea,
+p,
+blockquote,
+img,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari */
+}
+
+img {
+    border: none;
+    float: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+dt,
+dd,
+li {
+    position: relative;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    font: 12px 'Microsoft YaHei', Verdana, Arial, Helvetica, sans-serif;
+    word-break: break-all;
+    background: url(../img/bg.jpg) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.part-wrap {
+    width: 21.6%;
+    padding-top: 2.7%;
+    display: inline-block;
+    float: left;
+}
+
+.part-wrap-middle {
+    width: 56.2%;
+    padding-top: 0;
+    display: inline-block;
+    float: left;
+}
+
+.part-wrap-right {
+    width: 22.2%;
+    float: right;
+}
+
+#chart1 {
+    /*background: url(../img/cbg1.png) center center no-repeat;*/
+    background-size: 100% 100%;
+    padding: 16% 0 8.5%;
+}
+
+#chart2 {
+    position: relative;
+    /*background: url(../img/cbg2.png) center center no-repeat !important;*/
+    background-size: 100% 100% !important;
+}
+
+@keyframes ihome
+{
+    0%   {opacity: 0;}
+    10%  {opacity: 0.1;}
+    20%  {opacity: 0.2;}
+    30%  {opacity: 0.3;}
+    40%  {opacity: 0.4;}
+    50%  {opacity: 0.5;}
+    60%  {opacity: 0.6;}
+    70%  {opacity: 0.7;}
+    80%  {opacity: 0.8;}
+    90%  {opacity: 0.9;}
+    100% {opacity: 1;}
+    90%  {opacity: 0.9;}
+    80%  {opacity: 0.8;}
+    70%  {opacity: 0.7;}
+    60%  {opacity: 0.6;}
+    50%  {opacity: 0.5;}
+    40%  {opacity: 0.4;}
+    30%  {opacity: 0.3;}
+    20%  {opacity: 0.2;}
+    10%  {opacity: 0.1;}
+    0%   {opacity: 0;}
+}
+
+#chart2 .room-bg {
+    position: absolute;
+    background: url(../img/ihome1.png) center no-repeat;
+    background-size: 90%;
+    display: none;
+
+    -webkit-animation-name: 'ihome1';/*动画属性名，也就是我们前面keyframes定义的动画名*/
+    -webkit-animation-duration: 3s;/*动画持续时间*/
+    -webkit-animation-timing-function: ease-in-out; /*动画频率，和transition-timing-function是一样的*/
+    -webkit-animation-delay: 0.5s;/*动画延迟时间*/
+    -webkit-animation-iteration-count: infinite;/*定义循环资料，infinite为无限次*/
+    -webkit-animation-direction: alternate;/*定义动画方式*/
+}
+
+#chart3 {
+    /*background: url(../img/cbg3.png) center center no-repeat !important;*/
+    background-size: 100% 100% !important;
+}
+
+.total-bill {
+    font-family: 'Krungthep';
+    position: absolute;
+    bottom: 2.646%;
+    left: 24.529%;
+    width: 12.25%;
+    height: 5.28%;
+    font-size: 36px;
+    text-align: center;
+    color: #b8e2f9;
+    /*line-height: 120%;*/
+}
+
+#chart6 {
+    /*background: url(../img/cbg6.png) center center no-repeat;*/
+    background-size: 100% 100%;
+    padding: 3.5% 2.8% 0 9.5%;
+}
+
+#chart7 {
+    /*background: url(../img/cbg5.png) center center no-repeat;*/
+    background-size: 100% 100%;
+    padding: 3.8% 10% 3.8% 10.6%;
+}
+
+#chart8 {
+    /*background: url(../img/cbg8.png) center center no-repeat;*/
+    background-size: 100% 100%;
+}
+#chart8 .service-chart {
+    padding-top: 11.1%;
+    margin-left: 9.1%;
+    width: 83%;
+    height: 88%;
+}
+#chart8 .anchorBL {
+    display: none;
+}
+
+#chart4 span i {
+    width: 12.5%;
+    height: 100%;
+    display: inline-block;
+    background: url(../img/number2.png) no-repeat;
+    background-position: 0 0;
+    text-indent: -999em;
+    background-size: 100% 2000%;
+}
+
+.wrap-num1 {
+    float: left;
+    display: inline-block;
+    height: 100%;
+    width: 30.8%;
+    margin-left: 16.2%;
+    text-align: center;
+}
+
+.wrap-num2 {
+    float: left;
+    display: inline-block;
+    height: 100%;
+    width: 34.4%;
+    margin-left: 12.3%;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Krungthep';
+    src: url('Krungthep.eot');
+    src: url('Krungthep.woff') format('woff'),
+    url('Krungthep.svg#Krungthep') format('svg'),
+    url('Krungthep.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
